@@ -11,16 +11,47 @@
 </head>
 <body>
   <header>
-    <img class="logo" src="" alt="ESR-Pong logo">
-
+    <img class="logo" src="images/pongLogo.png" alt="ESR-Pong logo">
+    <h1>Velcome to a game of Pong!</h1>
 
   </header>
   <main>
+    <h2>How to play</h2>
+    <ul>
+      <li>Choose a name, difficulty, mode and then press "start game"</li>
+      <li>When the game starts, move your padle up and down to prevent the ball from hitting the wall behind your padle.</li> 
+      <li>You get a point everytime the ball is bounced off your padle</li>
+      <li>The game ends when the ball hits the wall behind the padle</li>
 
+    </ul>
+    <form>
+      <fieldset>
+        <legend>Choose a player name :)</legend>
+     <label for="player1">Write in a name</label>
+     <input type="text" id="inpPlayer1" name="player1" placeholder="Player 1" minlength="3" maxlength="25" size="10 "required>
 
+     <p>Choose a difficulty level</p>
+     <input type="radio" id="easyDif" name="difficulty" value="easy">
+     <label for="easyDif">Easy</label>
+    <input type="radio" id="normalDif" name="difficulty" value="normal">
+    <label for="normalDif">Normal</label>
+    <input type="radio" id="hardDif" name="difficulty" value="hard">
+    <label for="hardDif">Hard</label>
 
+    <p>Choose what style to play in!</p>
+      <input type="radio" id="normalStyle" name="style" value="normalStyle">
+      <label for="normalStyle">Normal Style</label>
+      <input type="radio" id="waterStyle" name="style" value="waterStyle">
+      <label for="waterStyle">Water Style</label>
+      <br>
+      <button type="button" id="gameInpBtn">Start Game</button>
+    </fieldset>
+    </form>
 
   </main>
-  <footer></footer>  
+  <footer>
+
+  </footer>  
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
